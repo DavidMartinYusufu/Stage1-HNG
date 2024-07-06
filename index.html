@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stage1 Portfolio</title>
+  </head>
+  <body>
+    <header id="time-sec">
+      <section>
+        <!-- <p>Current time in UTC</p> -->
+        <p id="time" data-testid="currentTimeUTC"></p>
+      </section>
+
+      <section>
+        <!-- <p>Current Day of the week</p>  -->
+        <p id="day" data-testid="currentDay"></p>
+      </section>
+    </header>
+    <main>
+      <section class="profile">
+        <section id="profile-sec">
+          <p id="intro">Hi, my name is</p>
+          <h1 id="name" data-testid="slackDisplayName">David Martin</h1>
+          <p data-testid="slackEmail">davidmartinyusufu@gmail.com</p>
+        </section>
+  
+        <section id="image-sec">
+          <section id="img-bg">
+            <img
+              src="/oie_1mfqdQ0jFwnD.jpg"
+              alt="my profile image"
+              data-testid="slackProfilePicture"
+            />
+          </section>
+        </section>
+      </section>
+      
+    </main>
+
+    <section id="hng-sec">
+      <h2 id="hng-h2">Learn more about HNG Internship</h2>
+      <section id="hng-link">
+        <a data-testid="hngLink" href="http://hng.tech/learn" target="_blank"
+          >hng.tech/learn</a
+        >
+        <a data-testid="keywordLink" href="http://keyword.dog/" target="_blank"
+          >keyword.dog</a
+        >
+        <a
+          data-testid="scrapeanywebLink"
+          href="http://scrapeanyweb.site/"
+          target="_blank"
+          >scrapeanyweb.site</a
+        >
+      </section>
+    </section>
+  
+    <section id="goals-sec">
+      <section>
+        <h1 id="h1">My goals for the next 2 years</h1>
+      </section>
+
+      <section class="goals-h2">
+        <section class="goals">
+          <h2 >Specialize in a niche:</h2>
+          <section class="goals-list">
+            <ul>
+              <li>
+                Focus on a specific area's like performance optimization,
+                accessibility, or UI/UX design.
+              </li>
+              <li>Develop my skills and become an expert in Frontend development.</li>
+              <li>
+                Speak at conferences and write professional articles.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="goals">
+          <h2>Lead a team or mentor others:</h2>
+          <section class="goals-list">
+            <ul>
+              <li>Take on leadership roles or mentor junior developers.</li>
+              <li>Share knowledge and experience with others.</li>
+              <li>Help shape the direction of teams or organizations.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="goals">
+          <h2>Stay ahead of the curve:</h2>
+          <section class="goals-list">
+            <ul>
+              <li>Experiment with emerging technologies like AR/VR or AI.</li>
+              <li>
+                Continuously update my skills to remain relevant in the
+                industry.
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <script>
+      const t = new Date();
+      document.getElementById("time").innerHTML = t.toUTCString();
+
+      const d = new Date();
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      document.getElementById("day").innerHTML = days[d.getDay()];
+    </script>
+  </body>
+</html>

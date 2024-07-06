@@ -1,0 +1,148 @@
+body {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 100; */
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  background-color: #f7f073;
+  border: 1px solid #d6cf4b;
+  height: 70vh;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  gap: 200px;
+}
+
+.profile {
+  display: flex;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+
+#intro {
+  font-size: 20px;
+  color: #2c2d2e;
+}
+
+#name {
+  font-size: 45px;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  color: #2c2d2e;
+}
+
+#time-sec {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  border: 1px solid #d1c812;
+  width: 93%;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  
+  /* gap: 20px; */
+}
+
+#img-bg {
+  background-color: #f3f8e6;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#hng-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#hng-h2 {
+  text-align: center;
+  color: #2c2d2e;
+}
+
+#hng-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#hng-link a {
+  text-decoration: none;
+  color: #797875;
+}
+
+#hng-link a:hover {
+  text-decoration: none;
+  color: #2a97f0;
+}
+
+#goals-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.goals-list {
+  background-color: rgb(224, 222, 222);
+  padding: 20px 40px 20px 0px;
+  border-radius: 5px;
+  margin: 0%;
+  border: 1px solid rgb(192, 190, 190);
+}
+
+.goals-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.goals-list li {
+  list-style-type: none;
+  color: #1f2020;
+}
+
+#goals-sec {
+  margin-top: 100px;
+}
+
+.goals-h2 h2 {
+  color: #3a3d3f;
+  font-size: 18px;
+}
+
+#h1 {
+  text-align: center;
+  color: #2c2d2e;
+}
+
+@media (max-width: 780px) {
+  main {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .profile {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .goals {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
